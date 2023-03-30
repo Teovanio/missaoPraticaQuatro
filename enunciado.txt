@@ -130,58 +130,58 @@ Ajuste as características para obter uma página como o exemplo abaixo:
 👉 2º Procedimento | Página de Cadastro e Sistema de Navegação
 
 Abra o projeto livros-angular no ambiente do Visual Studio Code;
-Configure a biblioteca padrão de formulários, adicionando FormsModule ao vetor
-imports, presente na anotação NgModule da classe AppModule, definida no arquivo
+Configure a biblioteca padrão de formulários, adicionando FormsModule ao vetor ✓
+imports, presente na anotação NgModule da classe AppModule, definida no arquivo ✓
 app.module.ts;
 Configure o roteamento, no arquivo app-routing.module.ts, acrescentando no vetor
-routes as rotas "lista", apontando para LivroListaComponent, e "dados", atribuída a
-LivroDadosComponent, além da rota padrão apontando para "lista";
+routes as rotas "lista", apontando para LivroListaComponent, e "dados", atribuída a ✓
+LivroDadosComponent, além da rota padrão apontando para "lista"; ✓
 Modifique o template de AppComponent no arquivo app.component.html de acordo
 com as seguintes instruções:
 Apagar o conteúdo atual do arquivo
-Definir o menu de navegação, com tag nav, formatado pelo BootStrap, e utilizar
-âncoras com diretiva routerLink, para acesso às rotas
-Acrescentar um seletor router-outlet após o menu
+Definir o menu de navegação, com tag nav, formatado pelo BootStrap, e utilizar ✓
+âncoras com diretiva routerLink, para acesso às rotas ✓
+Acrescentar um seletor router-outlet após o menu ✓
 Implemente o código da classe LivroDadosComponent, definida no arquivo livro-
 dados.component.ts, de acordo com as instruções apresentadas a seguir:
 Definir o atributo público livro, do tipo Livro, instanciado via construtor padrão da
-classe Livro
-Definir o atributo público autoresForm, do tipo texto, inicializado vazio
-Definir o atributo público editoras, do tipo Array<Editora>, inicializado com um
+classe Livro ✓
+Definir o atributo público autoresForm, do tipo texto, inicializado vazio ✓
+Definir o atributo público editoras, do tipo Array<Editora>, inicializado com um ✓
 vetor vazio
-Injetar os serviços ControleEditoraService e ControleLivrosService, nos
-atributos privados servEditora e servLivros, através do construtor
-Injetar o roteador (Router) no atributo privado router, via construtor
-No método ngOnInit, implementação da interface OnInit, preencher o vetor
+Injetar os serviços ControleEditoraService e ControleLivrosService, nos ✓
+atributos privados servEditora e servLivros, através do construtor ✓
+Injetar o roteador (Router) no atributo privado router, via construtor ✓
+No método ngOnInit, implementação da interface OnInit, preencher o vetor ✓
 editoras, invocando o método getEditoras de servEditora
-Acrescentar o método incluir, estilo Arrow Function, que deve preencher o
+Acrescentar o método incluir, estilo Arrow Function, que deve preencher o  ✓
 atributo autores, do livro, com o valor de autoresForm separado pelas quebras
-de linha, através do método split, invocar o método incluir de servLivros, com a
-passagem do livro no parâmetro, e navegar para a rota "/lista", através do
-método navigateByUrl do objeto router
+de linha, através do método split, invocar o método incluir de servLivros, com a ✓
+passagem do livro no parâmetro, e navegar para a rota "/lista", através do ✓
+método navigateByUrl do objeto router ✓
 Implemente o template HTML de LivroDadosComponent, definido no arquivo livro-
 dados.component.html, de acordo com as instruções seguintes:
-Definir a área principal (main), com o título da página e um formulário para
-inclusão do livro, formatado através do Bootstrap
-Associar a diretiva (submit), na tag form, ao método incluir, e adicionar o atributo
-ngNativeValidate, para uso das restrições de campo do HTML 5
-Adicionar um campo de entrada obrigatório, do tipo text, associado a livro.titulo
+Definir a área principal (main), com o título da página e um formulário para ✓
+inclusão do livro, formatado através do Bootstrap ✓
+Associar a diretiva (submit), na tag form, ao método incluir, e adicionar o atributo ✓
+ngNativeValidate, para uso das restrições de campo do HTML 5 ✓
+Adicionar um campo de entrada obrigatório, do tipo text, associado a livro.titulo ✓
 através da diretiva [(ngModel)]
-Adicionar uma entrada do tipo textarea, associada a livro.resumo via diretiva
+Adicionar uma entrada do tipo textarea, associada a livro.resumo via diretiva ✓
 [(ngModel)]
 Utilizar uma lista de seleção (combo) para as editoras, com as opções sendo
-geradas via *ngFor, tendo como origem o vetor de nome editoras, e relacionando
+geradas via *ngFor, tendo como origem o vetor de nome editoras, e relacionando ✓
 codEditora ao valor da opção e nome para o texto
-Relacionar a lista com livro.codEditora, através da diretiva [(ngModel)], e tornar
+Relacionar a lista com livro.codEditora, através da diretiva [(ngModel)], e tornar ✓
 a seleção obrigatória
-Adicionar uma entrada do tipo textarea, associada a autoresForm através da
+Adicionar uma entrada do tipo textarea, associada a autoresForm através da ✓
 diretiva [(ngModel)]
-Adicionar um botão de submissão ao final
-Execute com o comando ng serve, e acesse o endereço http://localhost:4200/
+Adicionar um botão de submissão ao final  ✓
+Execute com o comando ng serve, e acesse o endereço http://localhost:4200/ ✓
 através de um navegador;
-Teste a navegação do sistema, a partir do menu da parte superior;
+Teste a navegação do sistema, a partir do menu da parte superior; ✓
 Teste a inclusão de livros e as restrições definidas via HTML
-Ajuste as características para obter uma página como o exemplo abaixo:
+Ajuste as características para obter uma página como o exemplo abaixo: ✓
 Resultados esperados da prática
 
 É importante que o código seja organizado;
